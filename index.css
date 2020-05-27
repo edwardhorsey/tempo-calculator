@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+h1, h2, p, ul {
+  padding: 5px;
+  margin: 5px;
+  list-style-type: none;
+}
+
+body {
+  background-color: #333636;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  text-align: center;
+  background-color: #dfdfdf95;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(imgs/edit3.jpg);
+  background-position: bottom;
+  border-radius: 10%;
+  width: 500px;
+  margin: 0 auto;
+}
+
+main input {
+  width: 200px;
+  height: 30px;
+  font-size: 1em;
+}
+
+main .table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100;
+}
+
+main .table img {
+  height: 25px;
+  width: 25px;
+}
+
+main .table img ul li {
+  list-style-type: none;
+  font-size: 1.1em;
+}
+
+main .table img ul.left {
+  text-align: right;
+}
+
+main .table img ul.right {
+  text-align: left;
+}
+
+footer {
+  background-color: #979797;
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+footer a {
+  color: white;
+  font-size: 1.3em;
+}
+
+footer a a:visited {
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */
