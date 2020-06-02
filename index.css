@@ -60,10 +60,6 @@ main input {
   font-size: 1em;
 }
 
-main section {
-  border: 2px solid purple;
-}
-
 main section .slider {
   display: none;
 }
