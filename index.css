@@ -14,7 +14,7 @@ body {
   background-image: url(./imgs/tile.jpg);
   color: black;
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,6 +36,10 @@ header {
   background-color: #ebebeb;
 }
 
+header h1 {
+  font-size: 24px;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +54,8 @@ main {
   background-color: #ebebeb;
   border-radius: 10%;
   width: 60%;
+  max-width: 600px;
+  min-width: 300px;
   height: 70%;
   margin: 0 auto;
 }
@@ -105,7 +111,7 @@ main section .table img ul.right {
 footer {
   background-color: #ebebeb;
   padding: 10px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 footer a {
@@ -115,5 +121,17 @@ footer a {
 
 footer a a:visited {
   color: black;
+}
+
+@media only screen and (min-width: 550px) {
+  body {
+    font-size: 18px;
+  }
+  body header h1 {
+    font-size: 2em;
+  }
+  body footer {
+    font-size: 1.2em;
+  }
 }
 /*# sourceMappingURL=index.css.map */
