@@ -1,3 +1,7 @@
+$primary-color: #00a2ff;
+$secondary-color: #ebebeb;
+$primary-font-color: black;
+
 *{
   padding: 0;
   margin: 0;
@@ -11,9 +15,11 @@ h1, h2, p, ul{
 }
 
 body{
-  background-color: #333636;
-  color: black;
+  // background-color: $primary-color;
+  background-image: url(./imgs/tile.jpg);
+  color: $primary-font-color;
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -24,17 +30,19 @@ body{
 
 header{
   text-align: center;
-  background-color: #dfdfdf95;
+  background-color: $secondary-color;
 }
 
 main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(imgs/edit3.jpg);
-  background-position: bottom;
+  background-color: $secondary-color;
+  // background-image: url(imgs/edit3.jpg);
+  // background-position: bottom;
   border-radius: 10%;
-  width: 500px;
+  width: 60%;
+  height: 70%;
   margin: 0 auto;
 
   input{
@@ -42,42 +50,54 @@ main{
       height: 30px;
       font-size: 1em;
   }
-      
+   
+  section {
 
-  .table{
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      justify-content: center;
-      width: 100  ;
+    border: 2px solid purple;
 
-      img{
-          height: 25px;
-          width: 25px;
-
-      ul li{
-          list-style-type: none;
-          font-size: 1.1em;
+      .slider{
+        display: none;
+        p {
+          font-weight: 700;
+        }
       }
 
-      ul.left{
-          text-align: right;
-      }
-      ul.right{
-          text-align: left;
+
+    .table{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+        width: 100% ;
+
+        img{
+            height: 25px;
+            width: 25px;
+
+        ul li{
+            list-style-type: none;
+            font-size: 1.1em;
+        }
+
+        ul.left{
+            text-align: right;
+        }
+        ul.right{
+            text-align: left;
+        }
       }
     }
-  }
+  } 
 }
   footer{
-    background-color: #979797;
+    background-color: $secondary-color;
     padding: 10px;
     font-size: 1.2em;
     a {
-        color: white;
+        color: $primary-font-color;
         font-size: 1.3em;
         a:visited{
-            color: white;
+            color: $primary-font-color;
         }
       }
   }

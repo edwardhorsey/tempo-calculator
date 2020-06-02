@@ -16,57 +16,59 @@
     </header>
     <main>
 
-        <section class="begin">
+        <section class="begin" id="begin">
             <h2>Enter your Tempo</h2>
             <form action="">
             <input type="text" name="user-tempo" id="tempo" onkeydown="getTempo()">
             <p id="alert"></p>
         </form>
-        </section>
-
+        
+        <div class="slider" id="resultBlock">
+          <p id="bpm"></p>
+          <input type="range" min="1" max="300" value="50" id="slider">
+        </div>
+        
+      </section>
         <section class="results">
-            <h2>Results</h2>
-            <div class="slider">
-                <h2>Slider goes here..</h2>
-            </div>
-            <div class="table">
-                <ul class="images">
-                    <li><img src="./imgs/quarter-note.png"></li>
-                    <br>
-                    <br>
-                    <br>
-                    <li><img src="./imgs/eighth-note.png"></li>
-                    <br>
-                    <br>
-                    <br>
-                    <li><img src="./imgs/semiquaver.png"></li>
-                </ul>
-                <ul class="left">
-                    <li>Quarter note:</li>
-                    <li>Quarter note triplet:</li>
-                    <br>
-                    <li>Eight note:</li>
-                    <li>Eight note dotted:</li>
-                    <li>Eight note triplet:</li>
-                    <br>
-                    <li>Sixteenth note:</li>
-                    <li>Sixteenth note dotted:</li>
-                    <li>Sixteenth note triplet:</li>
 
-                </ul>
-                <ul class="right">
-                    <li id="quarter">#</li>
-                    <li id="quarterT">#</li>
-                    <br>
-                    <li id="eigth">#</li>
-                    <li id="eigthDot">#</li>
-                    <li id="eigthT">#</li>
-                    <br>
-                    <li id="sixteenth">#</li>
-                    <li id="sixteenthDot">#</li>
-                    <li id="sixteenthT">#</li>
-                </ul>
-            </div>
+          <div class="table">
+            <ul class="images">
+                <li><img src="./imgs/quarter-note.png"></li>
+                <br>
+                <br>
+                <br>
+                <li><img src="./imgs/eighth-note.png"></li>
+                <br>
+                <br>
+                <br>
+                <li><img src="./imgs/semiquaver.png"></li>
+            </ul>
+            <ul class="left">
+                <li>Quarter note:</li>
+                <li>Quarter note triplet:</li>
+                <br>
+                <li>Eight note:</li>
+                <li>Eight note dotted:</li>
+                <li>Eight note triplet:</li>
+                <br>
+                <li>Sixteenth note:</li>
+                <li>Sixteenth note dotted:</li>
+                <li>Sixteenth note triplet:</li>
+
+            </ul>
+            <ul class="right">
+                <li id="quarter">#</li>
+                <li id="quarterT">#</li>
+                <br>
+                <li id="eigth">#</li>
+                <li id="eigthDot">#</li>
+                <li id="eigthT">#</li>
+                <br>
+                <li id="sixteenth">#</li>
+                <li id="sixteenthDot">#</li>
+                <li id="sixteenthT">#</li>
+            </ul>
+          </div>
         </section>
 </main>
     <Footer>

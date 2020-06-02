@@ -11,9 +11,10 @@ h1, h2, p, ul {
 }
 
 body {
-  background-color: #333636;
+  background-image: url(./imgs/tile.jpg);
   color: black;
   font-family: 'Roboto', sans-serif;
+  font-size: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,7 +33,7 @@ body {
 
 header {
   text-align: center;
-  background-color: #dfdfdf95;
+  background-color: #ebebeb;
 }
 
 main {
@@ -46,10 +47,10 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(imgs/edit3.jpg);
-  background-position: bottom;
+  background-color: #ebebeb;
   border-radius: 10%;
-  width: 500px;
+  width: 60%;
+  height: 70%;
   margin: 0 auto;
 }
 
@@ -59,7 +60,19 @@ main input {
   font-size: 1em;
 }
 
-main .table {
+main section {
+  border: 2px solid purple;
+}
+
+main section .slider {
+  display: none;
+}
+
+main section .slider p {
+  font-weight: 700;
+}
+
+main section .table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,39 +85,39 @@ main .table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100;
+  width: 100%;
 }
 
-main .table img {
+main section .table img {
   height: 25px;
   width: 25px;
 }
 
-main .table img ul li {
+main section .table img ul li {
   list-style-type: none;
   font-size: 1.1em;
 }
 
-main .table img ul.left {
+main section .table img ul.left {
   text-align: right;
 }
 
-main .table img ul.right {
+main section .table img ul.right {
   text-align: left;
 }
 
 footer {
-  background-color: #979797;
+  background-color: #ebebeb;
   padding: 10px;
   font-size: 1.2em;
 }
 
 footer a {
-  color: white;
+  color: black;
   font-size: 1.3em;
 }
 
 footer a a:visited {
-  color: white;
+  color: black;
 }
 /*# sourceMappingURL=index.css.map */
