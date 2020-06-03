@@ -43,17 +43,14 @@ const dataCalculation = function(temp){
   }
 };
 
-console.log(dataCalculation(120))
+// console.log(dataCalculation(120))
 
 const printTable = (value) => {
-
   let milliseconds = dataCalculation(value);
-  
   for (prop in milliseconds) {
     let tableItem = document.getElementById(prop);
     tableItem.innerHTML = `${milliseconds[prop]} ms`;
   }
-
   slider.value = value;
   document.getElementById('tempo').value = value;
   document.getElementById('bpm').innerHTML = `BPM: ${value}`;
@@ -73,6 +70,7 @@ const getTempo = function(){
         document.getElementById('alert').innerHTML = '';
         printTable(tempo);
         document.getElementById('resultBlock').style.display = 'block';
+        document.querySelector('.table').style.display = 'flex';
       } else {
         document.getElementById('alert').innerHTML = 'Please enter a number between 1-300';
         document.getElementById('resultBlock').style.display = 'none';

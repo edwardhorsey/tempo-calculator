@@ -40,7 +40,7 @@ header{
 main{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color: $secondary-color;
   border-radius: 10%;
   width: 60%;
@@ -54,13 +54,13 @@ main{
       width: 200px;
       height: 30px;
       font-size: 1em;
-      z-index: 5;
+      z-index: 1;
       margin-top: 5px;
   }
    
   section {
     padding: 0px 0px;
-
+    
     // border: 2px solid purple;
 
     .slider{
@@ -94,10 +94,11 @@ main{
     }
 
     .table{
+        // display: none;
         display: flex;
         flex-direction: row;
         align-content: center;
-        justify-content: center;
+        justify-content: space-evenly;
         width: 100% ;
 
         ul.images {
@@ -137,6 +138,20 @@ main{
       }
   }
 
+@media only screen and (max-height: 640px) {
+  body {
+    height: 640px;
+    section {
+      &.begin {
+        h2 {
+          // color: red;
+        }
+      }
+    }
+  }
+}
+
+
 @media only screen and (min-width: 550px) {
   
   body {
@@ -150,9 +165,16 @@ main{
     
     main {
       max-height: 600px;
+      max-width: 500px;
 
       section {
-        padding: 10px 0px;
+        padding: 4px 0px;
+
+        #slider{
+          min-width: 200px;
+          width: 50%;
+          // margin-top: 10px;
+        }
         
         .table ul.images {
           font-size: 16px;

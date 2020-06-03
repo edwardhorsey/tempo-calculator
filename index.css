@@ -50,9 +50,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-color: #ebebeb;
   border-radius: 10%;
   width: 60%;
@@ -67,7 +67,7 @@ main input {
   width: 200px;
   height: 30px;
   font-size: 1em;
-  z-index: 5;
+  z-index: 1;
   margin-top: 5px;
 }
 
@@ -118,9 +118,9 @@ main section .table {
           flex-direction: row;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   width: 100%;
 }
 
@@ -161,6 +161,12 @@ footer a a:visited {
   color: black;
 }
 
+@media only screen and (max-height: 640px) {
+  body {
+    height: 640px;
+  }
+}
+
 @media only screen and (min-width: 550px) {
   body {
     font-size: 18px;
@@ -170,9 +176,14 @@ footer a a:visited {
   }
   body main {
     max-height: 600px;
+    max-width: 500px;
   }
   body main section {
-    padding: 10px 0px;
+    padding: 4px 0px;
+  }
+  body main section #slider {
+    min-width: 200px;
+    width: 50%;
   }
   body main section .table ul.images {
     font-size: 16px;
