@@ -12,6 +12,7 @@ h1, h2, p, ul{
   padding: 5px;
   margin: 5px;
   list-style-type: none;
+  z-index: 0.5;
 }
 
 body{
@@ -46,12 +47,15 @@ main{
   max-width: 600px;
   min-width: 300px;
   height: 70%;
+  max-height: 500px;
   margin: 0 auto;
 
   input{
       width: 200px;
       height: 30px;
       font-size: 1em;
+      z-index: 5;
+      margin-top: 5px;
   }
    
   section {
@@ -97,7 +101,7 @@ main{
         width: 100% ;
 
         ul.images {
-          font-size: 16px;
+          font-size: 13px;
         }
 
         img {
@@ -137,15 +141,23 @@ main{
   
   body {
     font-size: 18px;
-
+    
     header {
       h1 {
         font-size: 2em;
       }
     }
     
-    section {
-      padding: 10px 0px;
+    main {
+      max-height: 600px;
+
+      section {
+        padding: 10px 0px;
+        
+        .table ul.images {
+          font-size: 16px;
+        }
+      }
     }
 
     footer {

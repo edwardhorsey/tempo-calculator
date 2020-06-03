@@ -8,6 +8,7 @@ h1, h2, p, ul {
   padding: 5px;
   margin: 5px;
   list-style-type: none;
+  z-index: 0.5;
 }
 
 body {
@@ -58,6 +59,7 @@ main {
   max-width: 600px;
   min-width: 300px;
   height: 70%;
+  max-height: 500px;
   margin: 0 auto;
 }
 
@@ -65,6 +67,8 @@ main input {
   width: 200px;
   height: 30px;
   font-size: 1em;
+  z-index: 5;
+  margin-top: 5px;
 }
 
 main section {
@@ -121,7 +125,7 @@ main section .table {
 }
 
 main section .table ul.images {
-  font-size: 16px;
+  font-size: 13px;
 }
 
 main section .table img {
@@ -164,8 +168,14 @@ footer a a:visited {
   body header h1 {
     font-size: 2em;
   }
-  body section {
+  body main {
+    max-height: 600px;
+  }
+  body main section {
     padding: 10px 0px;
+  }
+  body main section .table ul.images {
+    font-size: 16px;
   }
   body footer {
     font-size: 1.2em;
