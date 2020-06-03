@@ -28,7 +28,7 @@ down.addEventListener('click', () => {
 
 
 
-const dataCalculation = function(temp){
+const dataCalculation = (temp) => {
   console.log(`what up`, temp);
   let quarterNote = 60000/temp;
   return {
@@ -57,7 +57,7 @@ const printTable = (value) => {
 };
 
 
-const getTempo = function(){
+const getTempo = () => {
   if (event.keyCode == 13) {
     event.preventDefault();
     let tempo = document.querySelectorAll('form')[0][0].value;
@@ -71,6 +71,7 @@ const getTempo = function(){
         printTable(tempo);
         document.getElementById('resultBlock').style.display = 'block';
         document.querySelector('.table').style.display = 'flex';
+        document.querySelector('main').style.justifyContent = 'space-evenly';
       } else {
         document.getElementById('alert').innerHTML = 'Please enter a number between 1-300';
         document.getElementById('resultBlock').style.display = 'none';
