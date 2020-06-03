@@ -13,4 +13,4 @@ Current features:
 
 Features to add:
 - Updated design
-- Stats on most commly search tempos
+- Stats on most commonly searched tempos
