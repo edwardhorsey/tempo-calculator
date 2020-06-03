@@ -1,4 +1,6 @@
 const slider = document.getElementById('slider');
+const up = document.getElementById('add');
+const down = document.getElementById('subtract');
 
 slider.addEventListener('click', () => {
   let sliderValue = slider.value;
@@ -9,6 +11,22 @@ slider.addEventListener('mousemove', () => {
   let sliderValue = slider.value;
   printTable(sliderValue);
 });
+
+up.addEventListener('click', () => {
+  let sliderValue = slider.value;
+  sliderValue > 299 ? sliderValue : sliderValue++;
+  console.log(sliderValue);
+  printTable(sliderValue);
+});
+
+down.addEventListener('click', () => {
+  let sliderValue = slider.value;
+  sliderValue > 1 ? sliderValue-- : sliderValue;
+  console.log(sliderValue);
+  printTable(sliderValue);
+});
+
+
 
 const dataCalculation = function(temp){
   console.log(`what up`, temp);
@@ -25,9 +43,9 @@ const dataCalculation = function(temp){
   }
 };
 
-// console.log(dataCalculation(120))
+console.log(dataCalculation(120))
 
-const printTable = function(value){
+const printTable = (value) => {
 
   let milliseconds = dataCalculation(value);
   

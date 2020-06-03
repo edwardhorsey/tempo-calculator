@@ -34,6 +34,7 @@ body {
 header {
   text-align: center;
   background-color: #ebebeb;
+  padding: 5px;
 }
 
 header h1 {
@@ -66,12 +67,41 @@ main input {
   font-size: 1em;
 }
 
+main section {
+  padding: 0px 0px;
+}
+
 main section .slider {
   display: none;
 }
 
+main section .slider #slider {
+  min-width: 200px;
+  width: 50%;
+  margin-top: 10px;
+}
+
 main section .slider p {
   font-weight: 700;
+}
+
+main section .slider div.bpm-and-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main section .slider div button {
+  width: 40px;
+  height: 40px;
+  font-weight: 800;
+  font-size: 1.2em;
 }
 
 main section .table {
@@ -90,6 +120,10 @@ main section .table {
   width: 100%;
 }
 
+main section .table ul.images {
+  font-size: 16px;
+}
+
 main section .table img {
   height: 25px;
   width: 25px;
@@ -100,11 +134,11 @@ main section .table img ul li {
   font-size: 1.1em;
 }
 
-main section .table img ul.left {
+main section .table img ul li.left {
   text-align: right;
 }
 
-main section .table img ul.right {
+main section .table img ul li.right {
   text-align: left;
 }
 
@@ -129,6 +163,9 @@ footer a a:visited {
   }
   body header h1 {
     font-size: 2em;
+  }
+  body section {
+    padding: 10px 0px;
   }
   body footer {
     font-size: 1.2em;

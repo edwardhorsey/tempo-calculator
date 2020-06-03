@@ -2,79 +2,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <title>Tempo Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Tempo => MS Calculator</title>
 </head>
 
 <body>
-    <header>
-        <h1>BPM to MS converter</h1>
-    </header>
-    <main>
+  <header>
+      <h1>BPM to Millisecond converter</h1>
+  </header>
+  <main>
 
-        <section class="begin" id="begin">
-            <h2>Enter your Tempo</h2>
-            <form action="">
-            <input type="text" name="user-tempo" id="tempo" onkeydown="getTempo()">
-            <p id="alert"></p>
-        </form>
-        
-        <div class="slider" id="resultBlock">
+    <section class="begin" id="begin">
+      <h2>Enter your Tempo</h2>
+      <form action="">
+        <input type="text" name="user-tempo" id="tempo" onkeydown="getTempo()">
+        <p id="alert"></p>
+      </form>
+    </section>
+    
+    <section>
+      <div class="slider" id="resultBlock">
+        <div class="bpm-and-btns">
+          <button class="btn" id="subtract">-</button>
           <p id="bpm"></p>
-          <input type="range" min="1" max="300" value="50" id="slider">
+          <button class="btn" id="add">+</button>
         </div>
-        
-      </section>
-        <section class="results">
+        <input type="range" min="1" max="300" value="50" id="slider">
+      </div>
+    </section>
 
-          <div class="table">
-            <ul class="images">
-                <li><img src="./imgs/quarter-note.png"></li>
-                <br>
-                <br>
-                <br>
-                <li><img src="./imgs/eighth-note.png"></li>
-                <br>
-                <br>
-                <br>
-                <li><img src="./imgs/semiquaver.png"></li>
-            </ul>
-            <ul class="left">
-                <li>Quarter note:</li>
-                <li>Quarter note triplet:</li>
-                <br>
-                <li>Eight note:</li>
-                <li>Eight note dotted:</li>
-                <li>Eight note triplet:</li>
-                <br>
-                <li>Sixteenth note:</li>
-                <li>Sixteenth note dotted:</li>
-                <li>Sixteenth note triplet:</li>
+    <section class="results">
 
-            </ul>
-            <ul class="right">
-                <li id="quarter">#</li>
-                <li id="quarterT">#</li>
-                <br>
-                <li id="eigth">#</li>
-                <li id="eigthDot">#</li>
-                <li id="eigthT">#</li>
-                <br>
-                <li id="sixteenth">#</li>
-                <li id="sixteenthDot">#</li>
-                <li id="sixteenthT">#</li>
-            </ul>
-          </div>
-        </section>
-</main>
-    <Footer>
-        <span>Created by Edward Horsey    <a href="https://www.github.com/edwardhorsey" target="blank"><i class="fa fa-github"></i></a></span>
-    </Footer>
-    <script src="index.js"></script>
+      <div class="table">
+        <ul class="images">
+            <li class="note-img"><img src="./imgs/quarter-note.png"></li>
+            <br>
+            <br>
+            <br>
+            <li class="note-img"><img src="./imgs/eighth-note.png"></li>
+            <br>
+            <br>
+            <br>
+            <li class="note-img"><img src="./imgs/semiquaver.png"></li>
+        </ul>
+        <ul class="left">
+            <li>Quarter note:</li>
+            <li>Quarter note triplet:</li>
+            <br>
+            <li>Eighth note:</li>
+            <li>Eighth note dotted:</li>
+            <li>Eighth note triplet:</li>
+            <br>
+            <li>Sixteenth note:</li>
+            <li>Sixteenth note dotted:</li>
+            <li>Sixteenth note triplet:</li>
+
+        </ul>
+        <ul class="right">
+            <li id="quarter">#</li>
+            <li id="quarterT">#</li>
+            <br>
+            <li id="eigth">#</li>
+            <li id="eigthDot">#</li>
+            <li id="eigthT">#</li>
+            <br>
+            <li id="sixteenth">#</li>
+            <li id="sixteenthDot">#</li>
+            <li id="sixteenthT">#</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <Footer>
+      <span>Created by Edward Horsey    <a href="https://www.github.com/edwardhorsey" target="blank"><i class="fa fa-github"></i></a></span>
+  </Footer>
+  <script src="index.js"></script>
 </body>
 
 </html>

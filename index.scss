@@ -15,7 +15,6 @@ h1, h2, p, ul{
 }
 
 body{
-  // background-color: $primary-color;
   background-image: url(./imgs/tile.jpg);
   color: $primary-font-color;
   font-family: 'Roboto', sans-serif;
@@ -34,6 +33,7 @@ header{
   h1 {
     font-size: 24px;
   }
+  padding: 5px;
 }
 
 main{
@@ -41,13 +41,10 @@ main{
   flex-direction: column;
   justify-content: center;
   background-color: $secondary-color;
-  // background-image: url(imgs/edit3.jpg);
-  // background-position: bottom;
   border-radius: 10%;
   width: 60%;
   max-width: 600px;
   min-width: 300px;
-  // width: 85%;
   height: 70%;
   margin: 0 auto;
 
@@ -58,16 +55,39 @@ main{
   }
    
   section {
+    padding: 0px 0px;
 
     // border: 2px solid purple;
 
-      .slider{
-        display: none;
-        p {
-          font-weight: 700;
-        }
+    .slider{
+      display: none;
+
+      #slider{
+        min-width: 200px;
+        width: 50%;
+        margin-top: 10px;
       }
 
+      p {
+        font-weight: 700;
+      }
+      div{
+        &.bpm-and-btns{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+
+     
+        }
+        button {
+          width: 40px;
+          height: 40px;
+          font-weight: 800;
+          font-size: 1.2em;
+          
+        }
+      }
+    }
 
     .table{
         display: flex;
@@ -76,20 +96,25 @@ main{
         justify-content: center;
         width: 100% ;
 
-        img{
+        ul.images {
+          font-size: 16px;
+        }
+
+        img {
             height: 25px;
             width: 25px;
 
-        ul li{
+        ul li {
             list-style-type: none;
             font-size: 1.1em;
-        }
 
-        ul.left{
-            text-align: right;
-        }
-        ul.right{
-            text-align: left;
+            &.left {
+              text-align: right;
+          }
+
+            &.right {
+              text-align: left;
+          }
         }
       }
     }
@@ -119,6 +144,10 @@ main{
       }
     }
     
+    section {
+      padding: 10px 0px;
+    }
+
     footer {
       font-size: 1.2em;
     }
