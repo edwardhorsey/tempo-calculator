@@ -8,6 +8,9 @@ _______________________________________________________
 Instructions:
 - Enter your tempo and go!
 
+Current features:
+- Slider
+
 Features to add:
-- Slider for altering the tempo which updates the table live
 - Updated design
+- Stats on most commly search tempos
