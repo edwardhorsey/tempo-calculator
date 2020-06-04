@@ -12,7 +12,8 @@ h1, h2, p, ul {
 }
 
 body {
-  background-image: url(./imgs/tile.jpg);
+  background-image: url(./imgs/tile-two.png);
+  background-size: cover;
   color: black;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -188,7 +189,7 @@ footer a a:visited {
     font-size: 16px;
   }
   body footer {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 /*# sourceMappingURL=index.css.map */

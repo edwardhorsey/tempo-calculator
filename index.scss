@@ -16,7 +16,8 @@ h1, h2, p, ul{
 }
 
 body{
-  background-image: url(./imgs/tile.jpg);
+  background-image: url(./imgs/tile-two.png);
+  background-size: cover;
   color: $primary-font-color;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
