@@ -12,6 +12,11 @@ slider.addEventListener('mousemove', () => {
   printTable(sliderValue);
 });
 
+// slider.addEventListener('TouchEvent', () => {
+//   let sliderValue = slider.value;
+//   printTable(sliderValue);
+// });
+
 up.addEventListener('click', () => {
   let sliderValue = slider.value;
   sliderValue > 299 ? sliderValue : sliderValue++;
