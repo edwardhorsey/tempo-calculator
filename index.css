@@ -55,7 +55,7 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #ebebeb;
-  border-radius: 10%;
+  border-radius: 8%;
   width: 60%;
   min-width: 300px;
   height: 70%;
@@ -106,6 +106,7 @@ main section .slider div button {
   height: 40px;
   font-weight: 800;
   font-size: 1.2em;
+  text-align: center;
 }
 
 main section .table {
